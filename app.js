@@ -37,7 +37,7 @@ const imageMarkup = (image, className, options = {}) => {
 
 const renderHeader = (data) => {
   const primaryPhone = data.contacts.phones.find((phone) => phone.primary) || data.contacts.phones[0];
-  return `<header class="site-header">
+  return `<header class="header site-header">
     <div class="container header-inner">
       <a class="brand" href="#top" translate="no" aria-label="${escapeHTML(data.brand.name)} - ${escapeHTML(data.ui.toHome)}">
         <span class="brand-mark"><img src="${escapeHTML(data.brand.logo)}" alt="${escapeHTML(data.brand.logoAlt)}" width="160" height="160" loading="eager" decoding="async"></span>
